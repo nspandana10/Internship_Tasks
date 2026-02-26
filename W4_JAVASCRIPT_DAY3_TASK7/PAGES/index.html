@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript loops demo</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: antiquewhite;
+        }
+        h1{
+            margin-bottom: 20px;
+            font-style: italic;
+
+        }
+        .button-container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        button{
+            padding: 10px 15px;
+            border: 1px solid #999;
+            background-color: beige;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            font-style: italic;
+            transition: 0.3s;
+        }
+        button:hover{
+            background-color: #007bff;
+            color: #333;
+        }
+        #output{
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Loops in Javascript</h1>
+    <div class="button-container">
+        <button onclick="for_loop()">FOR LOOP...When number of iterations is known</button>
+        <button onclick="while_loop()">WHILE LOOP...number of iterations not known</button>
+        <button onclick="do_while_loop()">DO WHILE LOOP</button>
+        <button onclick="for_of_array()">FOR OF...automatically identifies the size of array</button>
+        <button onclick="for_in_object()">FOR IN....used for objects</button>
+        <button onclick="break_exit()">BREAK...exit the loop</button>
+        <button onclick="continue_skip()">CONTINUE...skips current iteration</button>
+        <button onclick="nested_loop()">NESTED LOOP...loop inside loop</button>
+    </div>
+    <div id = "output"></div>
+    <script src="../SCRIPT/script.js"></script>
+</body>
+</html>
